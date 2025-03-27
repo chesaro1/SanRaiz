@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanRaiz | Beauty & Barber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/image/sanraizLogo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-content"data-aos="fade-down">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo-container">
+                <a href="index.html" class="logo" ><img src="./assets/image/sanraizLogo.png" alt="" style="margin-bottom: 10px;"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Form Container -->
+      <div class="form-container">
+        <h2 class="section-title" data-aos="zoom-in">Get in Touch</h2>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" class="appointment-form"id="appointmentForm">
+          <input type="hidden" name="access_key" value="28aefb12-1ee4-4134-91e5-f3439e055a04"> 
+          
+          <div class="form-group"data-aos="zoom-in">
+            <input type="text" id="name" name="Full Name" required>
+            <label for="name">Your Name</label>
+            <i class="fas fa-user"width="20px"></i>
+          </div>
+          <div class="form-group"data-aos="zoom-in">
+            <input type="email" id="email" name="Email Address"required>
+            <label for="email">Email Address</label>
+            <i class="fas fa-envelope"width="20px"></i>
+          </div>
+          <div class="form-group"data-aos="zoom-in">
+            <textarea id="message" name="Message" required></textarea>
+            <label for="message">Your Message</label>
+            <i class="fas fa-comment" width="20px"></i>
+          </div>
+          <button type="submit" class="submit-btn"data-aos="zoom-in">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+  
+      <!-- Map Container -->
+      <div class="map-container" data-aos="zoom-in">
+        
+        <iframe class="styled-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.19872111236!2d36.78842027496566!3d-1.2907396986969935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113c48acb931%3A0xdf8a0c9a24af58a1!2sSanraiz%20Salon%20%26%20Barber!5e1!3m2!1sen!2ske!4v1742857370432!5m2!1sen!2ske"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+<footer class="main-footer" data-aos="fade-up">
+    <div class="footer-content">
+        <div class="footer-column calm">
+          <h4>SANRAIZ</h4>  
+         <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i>Titan Kilimani,Chaka Road,near Yaya Centre.Nairobi,Kenya</p>
+            <p><i class="fas fa-phone"></i>+254740556011</p>
+            <p><i class="fas fa-envelope"></i>info@sanraiz.com</p>
+        </div>
+            
+
+        </div>
+        
+        
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><i class="fas fa-add"></i><a href="services.html">Services</a></li>
+                <li><i class="fas fa-add"></i><a href="about.html">About Us</a></li>
+                <li><i class="fas fa-add"></i><a href="appointment.html">Appointment</a></li>
+                <li><i class="fas fa-add"></i><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Our Services</h4>
+            <ul>
+                <li><i class="fas fa-add"></i></ion-icon><a href="services.html">Barber</a></li>
+                <li><i class="fas fa-add"></i><a href="services.html">Saloon</a></li>
+                <li><i class="fas fa-add"></i><a href="services.html">Spa</a></li>
+                <li><i class="fas fa-add"></i><a href="services.html">Products</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 SanRaiz. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+</footer>
+    <script src="./assets/js/script.js" defer></script>
+    <script  >window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        const logo = document.querySelector('.logo');
+        const scrolled = window.scrollY > 100;
+    
+        if (scrolled) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+     // Navigation Scroll Effect
+     window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        const scrolled = window.scrollY > 100;
+        navbar.classList.toggle('scrolled', scrolled);
+    });
+    
+    // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navbar = document.getElementById('navbar');
+    
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('menu-open');
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                navbar.classList.remove('menu-open');
+            }
+        });
+    
+        // Close menu on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                navbar.classList.remove('menu-open');
+            }
+        });</script>
+    <script>// Testimonial Carousel
+        document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.testimonial-carousel');
+    const carouselContainer = document.querySelector('.carousel-container');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dots = document.querySelectorAll('.dot');
+    
+    let currentIndex = 1; // Start with middle card
+    let cardWidth, containerWidth;
+
+    function calculateSizes() {
+        cardWidth = cards[0].offsetWidth + 32; // Include gap
+        containerWidth = carouselContainer.offsetWidth;
+    }
+
+    function updateCarousel() {
+        calculateSizes();
+        const centerOffset = (containerWidth / 2) - (cardWidth / 2);
+        const translateX = -currentIndex * cardWidth + centerOffset;
+        
+        carousel.style.transform = `translateX(${translateX}px)`;
+        
+        cards.forEach((card, index) => {
+            card.classList.toggle('active', index === currentIndex);
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateCarousel();
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
+    window.addEventListener('resize', () => {
+        calculateSizes();
+        updateCarousel();
+    });
+
+    // Initialize
+    calculateSizes();
+    updateCarousel();
+});</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 1500,
+      once: true
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanRaiz | Beauty & Barber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/image/sanraizLogo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-content"data-aos="fade-down">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo-container">
+                <a href="index.html" class="logo" ><img src="./assets/image/sanraizLogo.png" alt="" style="margin-bottom: 10px;"></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="appointment-section">
+        <div class="appointment-overlay"></div>
+        <div class="appointment-container">
+          <div class="stationery-form"data-aos="flip-up">
+            <h2 class="section-subtitle" style="text-align: center;">Book your Spot</h2>
+            <form class="vintage-form" action="https://api.web3forms.com/submit" method="POST" class="appointment-form"id="appointmentForm" style="
+    margin-top: 40px;">
+                <input type="hidden" name="access_key" value="28aefb12-1ee4-4134-91e5-f3439e055a04"> 
+                
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="full-name" name="Full Name"  required>
+                  <label for="full-name">Full Name</label>
+                  <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="Email Address" required>
+                  <label for="email">Email Address</label>
+                  <div class="underline"></div>
+                </div>
+              </div>
+      
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="tel" id="phone"  name="Phone Number" required>
+                  <label for="phone">Phone Number</label>
+                  <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                  <select id="service" name="Service"required>
+                    <option value="">Select Service</option>
+                    <option>Saloon</option>
+                    <option>Barber</option>
+                    <option>Pedicure</option>
+                    <option>Manicure</option>
+                    <option>Massage</option>
+                    <option>Facial Treatment</option>
+                    <option>Waxing</option>
+                    </select>
+                  <div class="underline"></div>
+                </div>
+              </div>
+      
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="date" id="date" name="Date" required>
+                  <label for="date">Preferred Date</label>
+                  <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" rows="3" ></textarea>
+                  <label for="message">Special Requests</label>
+                  <div class="underline"></div>
+                </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              </div>
+      
+              <button type="submit" class="classic-button">
+                Book Now <i class="fas fa-feather-alt"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    
+
+   
+    
+    <section class="testimonials">
+        <div class="carousel-container">
+            <h2 class="section-title reveal" data-aos="zoom-in">
+                What Our Customers Say                
+            </h2>
+            <div class="testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card active">
+                    <p class="testimonial-text">
+                        SanRaiz transformed my self-care routine. The attention to detail and professional 
+                        service made me feel truly pampered. Best facial I've ever experienced!
+                    </p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/89.jpg" 
+                             alt="Sarah Chebet" 
+                             class="client-avatar">
+                        <div class="client-details">
+                            <h4>Sarah Chebet</h4>
+                            <p>Marketing Executive</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card ">
+                    <p class="testimonial-text">
+                        Exceptional grooming services! The barbers are true artists. My weekly visits have 
+                        become a ritual I always look forward to.
+                    </p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/59.jpg" 
+                             alt="Michael Kinyanjui" 
+                             class="client-avatar">
+                        <div class="client-details">
+                            <h4>Michael Kinyanjui</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        The perfect balance of luxury and professionalism. Their wellness packages helped 
+                        me recover from chronic stress. Highly recommended!
+                    </p>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/62.jpg" 
+                             alt="Emma Wanjiru" 
+                             class="client-avatar">
+                        <div class="client-details">
+                            <h4>Emma Wanjiru</h4>
+                            <p>Yoga Instructor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="carousel-nav">
+                <button class="nav-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+    
+            <div class="dots-container">
+                <div class="dot active "></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chat-icon" data-aos="fade-down-left" data-aos-offset="500" data-aos-duration="500">
+        <a href="https://wa.me/+254740556011" target="_blank">
+            <img src="https://img.icons8.com/?size=50&id=16713&format=png&color=000000" alt="WhatsApp Button">
+          </a>
+          
+      </div>
+    
+<!-- Footer -->
+<footer class="main-footer" data-aos="fade-up">
+    <div class="footer-content">
+        <div class="footer-column calm">
+          <h4>SANRAIZ</h4>  
+         <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i>Titan Kilimani,Chaka Road,near Yaya Centre.Nairobi,Kenya</p>
+            <p><i class="fas fa-phone"></i>+254740556011</p>
+            <p><i class="fas fa-envelope"></i>info@sanraiz.com</p>
+        </div>
+            
+
+        </div>
+        
+        
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><i class="fas fa-add"></i><a href="services.html">Services</a></li>
+                <li><i class="fas fa-add"></i><a href="about.html">About Us</a></li>
+                <li><i class="fas fa-add"></i><a href="apppointment.html">Reviews</a></li>
+                <li><i class="fas fa-add"></i><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Our Services</h4>
+            <ul>
+                <li><i class="fas fa-add"></i></ion-icon><a href="services.html">Barber</a></li>
+                <li><i class="fas fa-add"></i><a href="services.html">Saloon</a></li>
+                <li><i class="fas fa-add"></i><a href="services.html">Spa</a></li>
+                <li><i class="fas fa-add"></i><a href="services.html">Products</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 SanRaiz. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+</footer>
+    <script src="./assets/js/script.js" defer></script>
+    <script  >window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        const logo = document.querySelector('.logo');
+        const scrolled = window.scrollY > 100;
+    
+        if (scrolled) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+     // Navigation Scroll Effect
+     window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        const scrolled = window.scrollY > 100;
+        navbar.classList.toggle('scrolled', scrolled);
+    });
+    
+    // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navbar = document.getElementById('navbar');
+    
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('menu-open');
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                navbar.classList.remove('menu-open');
+            }
+        });
+    
+        // Close menu on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+                navbar.classList.remove('menu-open');
+            }
+        });</script>
+    <script>// Testimonial Carousel
+        document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.testimonial-carousel');
+    const carouselContainer = document.querySelector('.carousel-container');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dots = document.querySelectorAll('.dot');
+    
+    let currentIndex = 1; // Start with middle card
+    let cardWidth, containerWidth;
+
+    function calculateSizes() {
+        cardWidth = cards[0].offsetWidth + 32; // Include gap
+        containerWidth = carouselContainer.offsetWidth;
+    }
+
+    function updateCarousel() {
+        calculateSizes();
+        const centerOffset = (containerWidth / 2) - (cardWidth / 2);
+        const translateX = -currentIndex * cardWidth + centerOffset;
+        
+        carousel.style.transform = `translateX(${translateX}px)`;
+        
+        cards.forEach((card, index) => {
+            card.classList.toggle('active', index === currentIndex);
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateCarousel();
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
+
+    window.addEventListener('resize', () => {
+        calculateSizes();
+        updateCarousel();
+    });
+
+    // Initialize
+    calculateSizes();
+    updateCarousel();
+});</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 1500,
+      once: true
+  });
+  </script>
+</body>
+</html>
