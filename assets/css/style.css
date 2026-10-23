@@ -1962,7 +1962,7 @@ body {
   /* Basic Layout & Typography */
   display: inline-block;
   padding: 14px 30px;
-  background-color: transparent; /* Gold color */
+  background-color: gold; /* Gold color */
   border: 2px solid #d4af37;  /* Gold border */
   color: #333;               /* Dark grey text */
   text-decoration: none;     /* Removes link underline */
